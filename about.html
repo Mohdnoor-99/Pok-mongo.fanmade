@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>pokemon registration page</title>
+<link rel="stylesheet" href="pokestyle.css">
+<!-----fontawesome--->
+<script src="https://use.fontawesome.com/6633025c3e.js"></script>
+</head>
+<style type="text/css">
+.carousal-container{
+width:50%;
+height:880px;
+margin:auto;
+border:5px solid black;
+position:relative;
+background:pink;
+overflow:hidden;
+}
+.carousel-slide{
+display:flex;
+}
+
+#preBtn{
+font-size:30px;
+color:black;
+position: absolute;
+top:50%;
+left:3px;
+z-index:10;
+}
+
+#nextBtn{
+font-size:30px;
+color: black;
+position: absolute;
+top:50%;
+right:3px;
+z-index:10;
+}
+.phone-container{
+position:absolute;
+  top:8%;
+  left:23%;
+  height:940px;
+  width:55%;
+}
+@media screen and (max-width:780px){
+
+body{
+padding:0;
+margin:0;
+}
+
+.carousal-container{
+margin-top:40px;
+width:50%;
+height:350px;
+margin:auto;
+border:5px solid black;
+position:relative;
+background:pink;
+overflow:hidden;
+}
+.carousel-slide{
+display:flex;
+}
+.carousel-slide div img{
+ width:200px;
+
+}
+#preBtn{
+font-size:20px;
+color:black;
+position: absolute;
+top:50%;
+left:3px;
+z-index:10;
+}
+
+#nextBtn{
+font-size:20px;
+color: black;
+position: absolute;
+top:50%;
+right:3px;
+z-index:10;
+}
+.phone-container{
+position:absolute;
+  top:20%;
+  left:23%;
+  height:400px;
+  width:55%;
+}
+
+
+</style>
+<body>
+<!-----navbar------->
+<section id="panel">
+<div>
+  <a class="brand-name" style="Z-index:5;" href="#">Pokémon GO</a>
+</div>
+ <header>
+	<div class="hamburger">
+	<div class="line"></div>
+	<div class="line"></div>
+	<div class="line"></div>
+	</div>
+	<ul class="nav-links">
+		<li><a href="pokemon.html" >Home</a>
+		</li>
+		<li><a href="about.html" >About</a>
+		</li>
+		<li><a href="login.html" >log in</a>
+		</li> 
+	</ul>
+ </header>
+</section>
+<!----title image---->
+<section id="page-title">
+<img class="Pokémongo" src="Pokemon_Go.png" alt="Pokémon go" width="250px" height="200px">
+<hr style="width:80%; height:2px; background-color:red;">
+</section>
+<!---full detail--->
+<section id="full-details">
+<div class="firt-intro">
+<h2 class="h2-about">Pokémon Go</h2>
+<h1 class="T">T</h1>
+<p class="para-1">ravel between the real world and the virtual world of Pokémon with Pokémon GO for iPhone and Android devices. With Pokémon GO, you'll discover Pokémon in a whole new world—your own! Pokémon GO gives you the chance to explore real locations and search far and wide for Pokémon. More and more Pokémon continue to appear around the globe, including rare and powerful Legendary Pokémon.</p>
+<img class="inline-01" src="inline-01.jpg">
+<p class="para-1">As you move around the places where you live and visit, your smartphone can vibrate to let you know when you're near a Pokémon. Once you've encountered a Pokémon, take aim on your smartphone's touch screen and throw a Poké Ball to catch it—but be careful, or it might run away! Also look for PokéStops located at interesting places—such as public art installations, historical markers, and monuments—where you can collect more Poké Balls and other items.</p>
+</div>
+
+<div class="second-intro">
+<h2>Battle Other Trainers</h2>
+<hr class="hr-line" >
+<img class="inline-08-en" src="inline-08-en.png" alt="inline-08-en">
+<p class="para-2">Are you ready for an exciting challenge? You can now take on another Trainer at any time in Pokémon GO. With Trainer Battles, you can match up against another Trainer by using a Battle Code, then face off using a team of three Pokémon. When the battle is over, both participants receive great rewards, including a chance at rare Evolution items.</p>
+</div>
+
+<div class="third-intro">
+<h2>Customize Your Trainer</h2>
+<hr class="hr-line" >
+<img class="inline-02" src="inline-02.jpg" alt="inline-02">
+<p class="para-1">When you first play Pokémon GO, you'll get to customize your Trainer, choosing apparel and accessories to give them a cool look. Your customized Trainer will appear as you move around on the map and on your profile page. Other players will also see your Trainer when they visit a Gym you control or when you interact as friends (see below).</p>
+</div>
+
+
+<div class="forth-intro">
+<h2>Join a Team and Battle</h2>
+<hr class="hr-line" >
+<p class="para-1" >At a certain point in the game, you'll be asked to join one of three teams. Once you join a team, you'll gain the ability to assign your Pokémon to open Gym locations or to a Gym where a teammate has already assigned a Pokémon. Each player can place only one Pokémon per Gym, so you'll need to work together with other members of your team to build up a strong defense. Like PokéStops, Gyms can be found at real-world locations.</p>
+<img class="inline-03" src="inline-03.jpg" alt="inline-03">
+<p class="para-1">If a rival team has claimed a Gym, you can challenge it by using your Pokémon to battle the Pokémon defending the Gym. You choose which of your Pokémon will join in the battle. Each Pokémon has two kinds of attacks, and can also dodge the defending Pokémon's attacks if you swipe left or right. If your Pokémon win the battle, the motivation of the defending Pokémon is reduced. When the motivation of each defending Pokémon drops to zero, the defending team loses control of the Gym, and you or another player can then take control of it by assigning a Pokémon to defend it.</p>
+</div>
+
+</section>
+<!----slide-show---->
+<section id="corousel">
+<h2>Catch Pokémon in the Real World with Pokémon GO!</h2>
+<div class="carousal-container">
+<i class="fa fa-chevron-left" aria-hidden="true" id="preBtn"></i>
+<i class="fa fa-chevron-right" aria-hidden="true" id="nextBtn" ></i>
+   <div class="carousel-slide">
+     <div id="lastclone">
+     <img src="researchwillow.jpg" alt="..." width="500px" >
+     </div>
+     <div>
+     <img class="" src="pokemon.jpg" alt="..." width="500px" >
+     </div>
+     <div>
+     <img class="" src="tyranitar.jpg" alt="..." width="500px" >       
+     </div>
+     <div>
+     <img class="" src="raidlobby.jpg" alt="..." width="500px" >        
+     </div>
+     <div>
+     <img class="" src="counter.jpg" alt="..." width="500px" >
+     </div>
+     <div>
+     <img class="" src="groupshot.jpg" alt="..." width="500px" >       
+     </div>
+     <div>
+     <img class="" src="mapviewegg.jpg" alt="..." width="500px" >        
+     </div>
+     <div>
+     <img class="" src="normaltrade.jpg" alt="..." width="500px" >
+     </div>
+     <div>
+     <img class="" src="pokemonvs.jpg" alt="..." width="500px" >       
+     </div>
+     <div id="firstclone" >
+     <img src="raidbattle.jpg" alt="..." width="500px">       
+     </div>     
+  </div>       
+</div> 
+    <img class="phone-container" src="Background-mobile.png" alt="..." >
+</section>
+
+
+
+<section id="YouTube-link">
+<h2>watch the trailer</h2>
+<iframe class="YouTube" width="400" height="220" src="https://www.youtube.com/embed/SWtDeeXtMZM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+<section id="button-img-viset">
+ <button class="visit-the-site"><img src="Visit-the-site.jpg" alt="visit-the-site"></button>
+</section>
+
+<!------footer-->
+<footer id="footer">
+<div class="footer">
+	<div class="container-footer">
+    	<img classs="logo" src="Pokemon_Go.png" alt="Pokémon go" width="100px">
+	</div>
+ <div class="list-links">
+		<ul class="links-1" >
+		<li><a href="" >real site</a></li>
+		<li><a href="" >games</a></li>
+		<li><a href="" >creator</a></li>
+		</ul>
+ </div>
+<hr class="footer-line">
+<div class="list-links">
+    <a href="" class="under" ><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+    <a href="" class="under" ><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+    <a href="" class="under" ><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+</div>
+<hr class="footer-line" >
+   <div class="about-me">
+     <a href="" >Mohd noor</a>
+    	<ul class="links" style="list-style:none;" >
+        	<li><a href="" ><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+         	<li><a href="" ><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a></li>
+        	<li><a href="" ><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+    	</ul>
+  </div>
+</div>
+<div class="copyright">
+   <p>all copyright belongs to Pokémongo company</p>
+   <p>©madebyme2020fun</p>
+</div>
+</footer>
+<!------bootstrap------>
+<!---personal-->
+<script type="text/javascript" src="pokemon.js" ></script>
+
+<script type="text/javascript">
+
+//carousel
+const carouselslide=document.querySelector(".carousel-slide");
+const carouselImages=document.querySelectorAll(".carousel-slide div");
+//buttons
+const prevBtn=document.querySelector("#preBtn");
+const nextBtn=document.querySelector("#nextBtn");
+const Interval=1000;
+//counter
+let counter= 1;
+const size=carouselImages[0].clientWidth;
+carouselslide.style.transform= 'translateX(' + (-size * counter) + 'px)';
+
+const autoSlide = () =>{
+  setInterval(() =>{
+    if(counter >= carouselImages.length - 1)return;
+     counter++;
+     carouselslide.style.transform= 'translateX(' + (-size * counter) + 'px)';
+     carouselslide.style.transition=".5s";
+    }, Interval );
+    }
+ autoSlide();
+ 
+//buttons listener
+nextBtn.addEventListener('click',() => {
+    if(counter >= carouselImages.length - 1)return;
+    carouselslide.style.transition= "transform 0.4s ease-in-out";
+    counter++;
+    carouselslide.style.transform= 'translateX(' + (-size * counter) + 'px)';
+    });
+
+prevBtn.addEventListener('click',() => {
+    if(counter <= 0)return;
+    carouselslide.style.transition="transform 0.4s ease-in-out";
+    counter--;
+    carouselslide.style.transform='translateX('+ (-size * counter) +'px)';
+    });
+
+
+
+//corousel
+carouselslide.addEventListener('transitionend',() => {
+  if(carouselImages[counter].id==="lastclone"){
+  carouselslide.style.transition="1s";
+  counter=carouselImages.length=1;
+  carouselslide.style.transform='translatex('+ (-size * counter) +'px)';
+ }
+ if(carouselImages[counter].id==="firstclone"){
+  carouselslide.style.transition="none";
+  counter=carouselImages.length= 0;
+  carouselslide.style.transform='translateX('+ (-size * counter) +'px)';
+ }
+});
+
+
+
+
+</script>
+
+
+
+</body>
+</html>

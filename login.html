@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>pokemon registration page</title>
+<link rel="stylesheet" href="pokestyle.css">
+<!--------fontawesome-->
+<script src="https://use.fontawesome.com/6633025c3e.js"></script>
+
+</head>
+<body>
+<!-----navbar------->
+<section id="panel">
+<div>
+  <a class="brand-name" style="Z-index:5;" href="#">Pokémon GO</a>
+</div>
+ <header>
+	<div class="hamburger">
+	<div class="line"></div>
+	<div class="line"></div>
+	<div class="line"></div>
+	</div>
+	<ul class="nav-links">
+		<li><a href="Pokemon.html" >Home</a>
+		</li>
+		<li><a href="About.html" >About</a>
+		</li>
+		<li><a href="Login.html" >log in</a>
+		</li> 
+	</ul>
+ </header>
+</section>
+<!----login---->
+<section id="top">
+<div class="hero">
+   <div class="form-box">
+     <div class="button-box">
+         <div id="btn"> </div>
+         <button type="button" class="toggle-btn" onclick="login()">login</button>
+         <button type="button"  class="toggle-btn" onclick="register()" >register</button>
+       </div>
+       <form id="login" class="input-group">
+       <input type="text" class="input-item" placeholder="user id" required>
+       <input type="text" class="input-item" placeholder="Enter password" required><br>
+       <input type="checkbox" class="checkbox"><span>Remember password</span>
+       <button type="submit" class="submit-btn">log in</button>
+       </form>
+       <!-----registretion--->
+       <form id="registration" class="input-group">
+       <input type="text" class="input-item" placeholder="user id" required>
+       <input type="email" class="input-item" placeholder="Email id" required>
+       <input type="text" class="input-item" placeholder="Enter password" required>
+       <input type="text" class="input-item" placeholder="confirm password" required>
+       <input type="checkbox" class="checkbox"><span>I agree to the terms& conditions</span>
+       <button type="submit" class="submit-btn">registration</button>
+       </form>
+    </div>    
+</div>
+</section>
+<!---footer-->
+<footer id="footer">
+<div class="footer">
+	<div class="container-footer">
+    	<img classs="logo" src="Pokemon_Go.png" alt="Pokémon go" width="100px">
+	</div>
+ <div class="list-links">
+		<ul class="links-1" >
+		<li><a href="" >real site</a></li>
+		<li><a href="" >games</a></li>
+		<li><a href="" >creator</a></li>
+		</ul>
+ </div>
+<hr class="footer-line">
+<div class="list-links">
+    <a href="" class="under" ><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+    <a href="" class="under" ><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+    <a href="" class="under" ><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+</div>
+<hr class="footer-line" >
+   <div class="about-me">
+     <a href="" >Mohd noor</a>
+    	<ul class="links" style="list-style:none;" >
+        	<li><a href="" ><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+         	<li><a href="" ><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a></li>
+        	<li><a href="" ><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+    	</ul>
+  </div>
+</div>
+<div class="copyright">
+   <p>all copyright belongs to Pokémongo company</p>
+   <p>©madebyme2020fun</p>
+</div>
+</footer>
+
+
+<script type="text/javascript" src="pokemon.js" ></script>
+</body>
+</html>
