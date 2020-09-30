@@ -30,16 +30,16 @@ hamburger.addEventListener("click",() => {
    });
 //buttons
 document.querySelectorAll(".click")[0].addEventListener("click",function (){
-    var audio=new Audio('sounds/Bulbasur.mp3');
+    var audio=new Audio('Bulbasur.mp3');
           audio.play();
 });
 
 document.querySelectorAll(".click")[1].addEventListener("click",function (){
-   var audio=new Audio('sounds/Squirtle.mp3');
+   var audio=new Audio('Squirtle.mp3');
        audio.play();
 });
 
 document.querySelectorAll(".click")[2].addEventListener("click",function (){
-    var audio=new Audio('sounds/Charmander.mp3');
+    var audio=new Audio('Charmander.mp3');
     audio.play();
 });
